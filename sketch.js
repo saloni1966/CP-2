@@ -43,7 +43,9 @@ function draw() {
   background(230);
  
   
-  paperObject.display();
+ //create paper object
+	
+	
   groundObject.display();
   dustbinObj.display();
 
@@ -58,7 +60,7 @@ function draw() {
 function keyPressed() {
   	if (keyCode === UP_ARROW) {
 
-    	Matter.Body.applyForce(paperObject.body,paperObject.body.position,{x:130,y:-145});
+    	//apply force to make the paper jump
 
     
   	}
